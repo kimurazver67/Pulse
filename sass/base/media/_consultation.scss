@@ -1,0 +1,39 @@
+@media(max-width: 992px){
+    .consultation{
+        .title_left{
+            padding: 0 20px;
+        }
+        .consultation__descr{
+            padding: 0 20px;
+        }
+        .feed-form{
+            padding: 0 20px;
+        }
+    }
+}
+
+@media(max-width: 572px){
+    body{
+    .consultation{
+        padding: 45px 0 0 0;
+        .title_left{
+            text-align: center;
+            font-size: 26px;
+            line-height: 40px;
+
+        }
+        .consultation__descr{
+            text-align: center;
+            font-size: 17px;
+        }
+    }
+}
+}
+
+@media(max-width: 572px){
+    .consultation{
+        .feed-form{
+            width: 100%;
+        }
+    }
+}

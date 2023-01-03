@@ -1,0 +1,31 @@
+@media(max-width: 985px){
+    .promo{
+        .header{
+            padding: 0 20px;
+        }
+    }
+}
+
+@media(max-width: 720px){
+    .promo{
+        .header{
+            &__official{
+                display: none;
+            }
+        }
+    }
+}
+
+@media(max-width: 520px){
+    .promo{
+        .header{
+           flex-direction: column;
+           &__contacts{
+            margin-top: 15px;
+            .button{
+                margin-top: 15px;
+            }
+           }
+        }
+    }
+}

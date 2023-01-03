@@ -1,0 +1,38 @@
+.footer{
+    position: relative;
+    max-height: 630px;
+    &__info{
+        position: absolute;
+        top:0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 460px;
+        height: 270px;
+        text-align: center;
+        background-color: $main_color;
+        padding: 50px 53px 56px 53px;
+
+    }
+    &__adr{
+        font-weight: 500;
+        font-size: 20px;
+        color: #fff;
+        margin-bottom: 36px;
+    }
+    &__tel{
+        display:block;
+        font-weight: 700;
+        font-size: 20px;
+        color: #fff;
+        margin-bottom: 36px;
+    }
+    &__social{
+        a{
+            margin-right: 27px;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+        
+    }
+}

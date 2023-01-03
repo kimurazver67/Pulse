@@ -1,0 +1,175 @@
+.catalog{
+    padding-bottom: 100px;
+    &__tabs{
+        list-style-type: none;
+        margin-top: 70px;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        margin-bottom: 0;
+        padding-left: 0;
+    }
+    &__tab{
+        width: 222px;
+        height: 52px;
+        background: rgba(0, 0, 0, 0.0001);
+        border: 2px solid #D0D0D0;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 48px;
+        text-align: center;
+        text-transform: uppercase; 
+        transform: skewX(-25deg);
+        transition: 0.5s all;
+      
+        div{
+            transform: skewX(25deg);
+        }
+        margin: 0 5px;
+        &:hover{
+            box-shadow: 3px 3px 20px $main_color;
+            border: none;
+        }
+        &_active{
+            background-color: $main_color;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    }
+    &__content{
+        margin-top: 60px;
+        display: none;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &_active{
+            display: flex;
+        }
+        }
+    &-item{
+        width: 303px;
+        min-height: 442px;
+        border: 2px solid #D0D0D0;
+        padding: 20px 20px 26px 20px;
+        overflow: hidden;
+        margin-bottom: 20px;
+        &__wrapper{
+            display: flex;
+            width: calc(200% + 40px);
+        }
+        &__content{
+            width: 50%;
+            margin-right: 20px;
+            transform: translateX(-100%);
+            transition: 0.5s all;
+            &_active{
+                transform: translateX(0%);
+                margin-right: 20px;
+            }
+        }
+        &__list{
+            position: relative;
+            width: 50%;
+            margin-left: 20px;
+            transform: translateX(0%);
+            padding-right: 20px;
+            transition: 0.5s all;
+            padding-left: 19px;
+            margin-bottom: 0;
+            list-style-type: none;
+            &_active{
+                margin-left: 0px;
+                transform: translateX(-100%);
+            }
+            li{
+                position: relative;
+                margin-bottom: 20px;
+                font-weight: 300;
+                font-size: 14px;
+                color: #555555;
+                
+                &::before{
+                    content: '';
+                    position: absolute;
+                    width: 5px;
+                    height: 5px;
+                    background-color: $main_color;
+                    left: -14px;
+                    top: 7px;
+
+                }
+            }
+            .catalog-item__back{
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(calc(-50% - 19px));
+                font-weight: 500;
+                font-size: 14px;
+                color: $main_color;
+                display: block; 
+                text-decoration: underline;
+                text-transform: uppercase;
+                &:hover{
+                    color: $main_color;
+                }
+            }
+        }
+        &__img{
+            max-width: 100%;
+            height: 200px;
+            display: block;
+            margin: 0 auto;
+        }
+        &__subtitle{
+            font-weight: 700;
+            font-size: 16px;
+            text-align: center;
+            color: #0D0D0D;
+            margin-top: 15px;
+        }
+        &__descr{
+            margin-top: 15px;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 22px;
+            text-align: center;
+            color: #0D0D0D;
+        }
+        &__link{
+            font-weight: 500;
+            font-size: 14px;
+            color: $main_color;
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 10px;
+            text-decoration: underline;
+            &:hover{
+                color: $main_color;
+            }
+        }
+        hr{
+            background: #E8E8E8;
+            margin-top: 19px;
+            margin-bottom: 21px;
+            border-bottom: none;
+        }
+        &__footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__old-price{
+            font-weight: 300;
+            font-size: 14px;
+            text-decoration-line: line-through;
+            color: #555555;
+        }
+        &__new-price{
+            font-weight: 700;
+            font-size: 20px;
+            color: #050505;
+        }
+    }
+}
