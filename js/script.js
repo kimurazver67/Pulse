@@ -44,5 +44,29 @@ $(document).ready(function(){
             $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
             $('.overlay, #order').fadeIn('slow');
         })
-      })
+      });
+
+      function validateForms(form){
+        $(form).validate({
+            rules:{
+                name: "required",
+                phone: "required",
+                email: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                name: "Пожалуйста введите свое Имя",
+                phone: "Пожалуйста введите номер Телефона",
+                email: {
+                  required: "Пожалуйста введите свой Email",
+                  email: "Неправильно введен адрес почты"
+                }
+              }
+          });
+      }
+      validateForms('#consultation-form');
+      validateForms('#consultation form');
+      validateForms('#order form');
 });
