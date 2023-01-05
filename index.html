@@ -18,11 +18,11 @@
     <title>Run Smart</title>
   </head>
   <body>
-    <section class="promo">
+    <section class="promo" id="up">
       <div class="container">
         <header class="header">
           <a class="header__logo" href="#">
-            <img src="/img/logo/logo.svg" alt="" srcset="" />
+            <img src="img/logo/logo.svg" alt="" srcset="" />
           </a>
           <div class="header__official">
             Официальный представитель
@@ -97,14 +97,13 @@
           и мы перезвоним вам в течении 10 минут
         </div>
         <form id="consultation-form" class="feed-form" action="#">
-            <input name="name" required type="text" placeholder="Ваше имя" />
+            <input name="name"  type="text" placeholder="Ваше имя" />
             <input
               name="phone"
-              required
-              type="number"
+              
               placeholder="Ваш телефон"
             />
-            <input name="email" required type="email" placeholder="Ваш E-mail" />
+            <input name="email"  type="email" placeholder="Ваш E-mail" />
             <button class="button button_submit">Заказать консультацию</button>
           </form>
       </div>
@@ -581,8 +580,6 @@
                 <input name="name" type="text" placeholder="Ваше имя" />
                 <input
                   name="phone"
-                
-                  type="number"
                   placeholder="Ваш телефон"
                 />
                 <input name="email" type="email" placeholder="Ваш E-mail" />
@@ -595,11 +592,9 @@
             <div class="modal__subtitle">Ваш заказ:</div>
             <div class="modal__descr">Пульсометр Polar FT1</div>
             <form class="feed-form feed-form_mt25" action="#">
-                <input name="name" required type="text" placeholder="Ваше имя" />
+                <input name="name" type="text" placeholder="Ваше имя" />
                 <input
                   name="phone"
-                  required
-                  type="number"
                   placeholder="Ваш телефон"
                 />
                 <input name="email" required type="email" placeholder="Ваш E-mail" />
@@ -612,6 +607,8 @@
             <div class="modal__descr">Наш менеджер свяжется с вами в ближайшее время!</div>
         </div>
     </div>
+    <a href="#up" class="pageup"><img src="img/icons/arrow-up.png" alt="up"></a>
+    
     <script
       type="text/javascript"
       src="https://code.jquery.com/jquery-1.11.0.min.js"
@@ -622,6 +619,7 @@
     ></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
