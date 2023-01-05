@@ -20,6 +20,7 @@
             width: 70px;
             height: 70px;
             margin-bottom: 30px;
+            
         }
         span{
             font-weight: 300;
@@ -32,4 +33,19 @@
             }
         }
     }
+    .benifits__icon_heart_animated{
+        animation-name: heart__beat;
+        animation-duration: 1.5s;
+        animation-timing-function:ease;
+        animation-iteration-count: infinite;
+        &:hover{
+            animation-play-state: paused;
+        }
+    }
+    .benifits__icon_run_animated{
+        animation: run 2s cubic-bezier(0.4, 0, 1, 1) infinite;
+    }
+
+    .benifits__icon_cup_animated{
+        animation: cup 2s cubic-bezier(0.55, 0.06, 0.68, 0.19) infinite;}
 }
